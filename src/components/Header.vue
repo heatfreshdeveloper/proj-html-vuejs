@@ -4,7 +4,7 @@
           <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
                 <img class="navbar-brand" href="#" src="../assets/image.png"/>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li v-for="nav in navList" :key="nav.items" class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">{{ nav.items }}</a>
                     </li>
@@ -78,6 +78,12 @@ export default {
     .my-container {
         padding-left: 280px;
         padding-right: 280px;
+    }
+
+    .my-container ul li:nth-child(7) {
+        background-color: #157347;
+        color: white !important;
+        border-radius: 5px;
     }
 
     .consulting-box {
